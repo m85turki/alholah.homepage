@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter</title>
+  <link rel="shortcut icon" href="./assets/img/logos/logo.png" type="image/png" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+  <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+  <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+  <link rel="stylesheet" href="assets/vendor/fonts/icomoon.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+  <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="assets/css/demo.css" />
+  <link rel="stylesheet" href="index-style.css" />
+
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="assets/vendor/libs/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendor/libs/owlcarousel/owl.theme.default.min.css">
+
+</head>
+
+<body class="bg-ornate">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-expand-md py-2">
+      <div class="container">
+
+        <!-- logo for large and medium screens  -->
+
+
+        <div class="d-none d-md-flex logo p-0">
+          <img src="./assets/img/logos/logo.png" alt="logo" class="img-fluid" />
+        </div>
+
+        <div class="d-md-none logo logo-sm p-0">
+          <img src="./assets/img/logos/logo-sm.png" alt="logo" class="img-fluid" />
+        </div>
+
+        <!-- nav options -->
+        <div class="d-none navbar-collapse justify-content-center align-items-center" id="navbarNav">
+          <ul class="navbar-nav custom-nav gap-2 gap-lg-3 " style="z-index: 1">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">أعضاء الإدارة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الفروع</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">آخر الأخبار</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- login button -->
+        <div class="d-none d-md-flex justify-content-start">
+          <button id="loginBtn" class="btn btn-primary">
+            تسجيل الدخول
+          </button>
+        </div>
+
+        <!-- Modified Section -->
+        <a class="navbar-toggler can-fs border-none p-0" type="button" id="offcanvasToggle" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <i class="fas fa-bars"></i>
+        </a>
+
+      </div>
+
+    </nav>
+
+    <!-- Off-canvas menu code -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="width: 220px">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav text-end">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold" href="#">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">أعضاء الإدارة</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">الفروع</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">آخر الأخبار</a>
+          </li>
+          <hr class="my-4">
+          <li class="nav-item">
+            <button id="loginBtn" class="btn btn-primary">
+              تسجيل الدخول
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modified Section -->
+    <div class="position-fixed top-50 start-0">
+      <div class="button-wrapper custom-border">
+        <button class="primary-bg icon-button">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="text ps-3">الحصول على مساعدة</span>
+        </button>
+      </div>
+      <div class="button-wrapper">
+        <button class="primary-bg icon-button">
+          <i class="fa-solid fa-clapperboard"></i>
+          <span class="text ps-3">خطوات التسجيل</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="d-flex flex-column gap-5 pb-5">
+
+    <!-- الحُــــلّة -->
+    <section>
+      <!-- intro -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h2 class="text-center mb-4 p-0 primary-color">الحُــــلّة</h2>
+            <!-- Modified Section -->
+            <p class="text-center primary-color about">
+              لريادة والتميز في تعليم القرآن الكريم والسنة النبوية والمنظومات العلمية وخدمة كتاب الله والسنة النبوية
+              وتعليمها وتيسيرها بواسطة معلمين متخصصين ذوي كفاءة في علوم القرآن الكريم والسنة النبوية والعلوم الشرعية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slider -->
+    <section>
+
+      <!-- slider -->
+      <div class="container-fluid px-0 position-relative secondary-bg slid py-2">
+        <div class="slid">
+          <div class="slider">
+            <div class="slides">
+              <img src="assets/img/slider/slider01.jpg" class="slide" alt="Image 3">
+              <img src="assets/img/slider/slider04.jpg" class="slide" alt="Image 1">
+              <img src="assets/img/slider/slider05.jpg" class="slide" alt="Image 2">
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+    </section>
+
+    <!-- برامج الحُــــلّة -->
+    <section>
+      <!-- Modified Section -->
+      <div class="container vector-bg">
+        <h4 class="text-center mb-4 p-0 primary-color">برامج الحُــــلّة</h4>
+        <div class="row g-3 g-sm-4 justify-content-center d-flex flex-wrap">
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="card p-3 secondary-bg stretch-group-h">
+              <div class="overview d-flex justify-content-center align-items-center">
+                <img src="./assets/img/pages/Rectangle79.png" class="rounded card-img-top img-fluid" alt="..." />
+              </div>
+              <div class="px-2 py-3 stretch-side d-flex justify-content-center align-items-center">
+                <p class="card-text text-center fw-semibold primary-color">
+                  المنظومات العلمية
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="card p-3 secondary-bg stretch-group-h">
+              <div class="overview d-flex justify-content-center align-items-center">
+                <img src="./assets/img/pages/Rectangle78.png" class="rounded card-img-top img-fluid" alt="..." />
+              </div>
+              <div class="px-2 py-3 stretch-side d-flex justify-content-center align-items-center">
+                <p class="card-text text-center fw-semibold primary-color">
+                  الحديث النبوي
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="card p-3 secondary-bg stretch-group-h">
+              <div class="overview d-flex justify-content-center align-items-center">
+                <img src="./assets/img/pages/Rectangle76.png" class="rounded card-img-top img-fluid" alt="..." />
+              </div>
+              <div class="px-2 py-3 stretch-side d-flex justify-content-center align-items-center">
+                <p class="card-text text-center fw-semibold primary-color">
+                  القرآن الكريم
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+            <div class="card p-3 secondary-bg stretch-group-h">
+              <div class="overview d-flex justify-content-center align-items-center">
+                <img src="./assets/img/pages/Rectangle77.png" class="rounded card-img-top img-fluid" alt="..." />
+              </div>
+              <div class="px-2 py-3 stretch-side d-flex justify-content-center align-items-center">
+                <p class="card-text text-center fw-semibold primary-color">
+                  تأسيس القراءة
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="position-absolute" style="z-index: -1">
+          <img src="./assets/img/logos/Vector-3.png" class="img-fluid" width="60%" alt />
+        </div>
+      </div>
+    </section>
+
+    <!-- الحُــــلّة في أرقام -->
+    <section>
+      <div class="container">
+        <div class="custom-ann px-3 py-4">
+          <h4 class="text-center mb-4 p-0 primary-color">
+            الحُــــلّة في أرقام
+          </h4>
+
+          <!-- Modified Section -->
+          <div class="row gx-5 gy-3 primary-color justify-content-center">
+
+            <div class="col-auto d-flex gap-2 justify-content-center align-items-center summary">
+
+              <div class="img">
+                <img src="./assets/img/logos/Vector-2.png" alt />
+              </div>
+
+              <div class="d-flex flex-column">
+                <div class="number">
+                  948
+                </div>
+                <div class="label">
+                  مسجد
+                </div>
+              </div>
+
+            </div>
+            <div class="col-auto d-flex gap-2 justify-content-center align-items-center summary">
+
+              <div class="img">
+                <img src="./assets/img/logos/Vector-2.png" alt />
+              </div>
+
+              <div class="d-flex flex-column">
+                <div class="number">
+                  948
+                </div>
+                <div class="label">
+                  طالب أجزاء
+                </div>
+              </div>
+
+            </div>
+            <div class="col-auto d-flex gap-2 justify-content-center align-items-center summary">
+
+              <div class="img">
+                <img src="./assets/img/logos/Vector-2.png" alt />
+              </div>
+
+              <div class="d-flex flex-column">
+                <div class="number">
+                  948
+                </div>
+                <div class="label">
+                  خاتم للقرآن
+                </div>
+              </div>
+
+            </div>
+            <div class="col-auto d-flex gap-2 justify-content-center align-items-center summary">
+
+              <div class="img">
+                <img src="./assets/img/logos/Vector-2.png" alt />
+              </div>
+
+              <div class="d-flex flex-column">
+                <div class="number">
+                  948
+                </div>
+                <div class="label">
+                  حلقة
+                </div>
+              </div>
+
+            </div>
+            <div class="col-auto d-flex gap-2 justify-content-center align-items-center summary">
+
+              <div class="img">
+                <img src="./assets/img/logos/Vector-2.png" alt />
+              </div>
+
+              <div class="d-flex flex-column">
+                <div class="number">
+                  948
+                </div>
+                <div class="label">
+                  طالب
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- لوحة التميز -->
+    <section>
+      <div class="container">
+        <h4 class="text-center mb-4 p-0 primary-color">لوحة التميز</h4>
+
+        <!--Owl-->
+        <div id="owl">
+          <div class="owl-carousel owl-theme">
+
+            <div class="item">
+              <div class="d-flex flex-column ">
+                <div class="board">
+                  <div class="board-info visible">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="board-info">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="name">
+                        محمد أحمد الراجحي
+                      </div>
+                      <div class="age">
+                        6 سنوات
+                      </div>
+
+                      <div class="mosque">
+                        مسجد الرحمن
+                      </div>
+                      <div class="description">
+                        حافظ لكتاب الله
+                      </div>
+
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="board-img d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/pages/Rectangle2.png" alt="student">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="d-flex flex-column ">
+                <div class="board">
+                  <div class="board-info visible">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="board-info">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="name">
+                        محمد أحمد الراجحي
+                      </div>
+                      <div class="age">
+                        6 سنوات
+                      </div>
+
+                      <div class="mosque">
+                        مسجد الرحمن
+                      </div>
+                      <div class="description">
+                        حافظ لكتاب الله
+                      </div>
+
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="board-img d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/pages/Rectangle1.png" alt="student">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="d-flex flex-column ">
+                <div class="board">
+                  <div class="board-info visible">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="board-info">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="name">
+                        محمد أحمد الراجحي
+                      </div>
+                      <div class="age">
+                        6 سنوات
+                      </div>
+
+                      <div class="mosque">
+                        مسجد الرحمن
+                      </div>
+                      <div class="description">
+                        حافظ لكتاب الله
+                      </div>
+
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="board-img d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/pages/Rectangle4.png" alt="student">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="d-flex flex-column ">
+                <div class="board">
+                  <div class="board-info visible">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="board-info">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="name">
+                        محمد أحمد الراجحي
+                      </div>
+                      <div class="age">
+                        6 سنوات
+                      </div>
+
+                      <div class="mosque">
+                        مسجد الرحمن
+                      </div>
+                      <div class="description">
+                        حافظ لكتاب الله
+                      </div>
+
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="board-img d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/pages/Rectangle2.png" alt="student">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="d-flex flex-column ">
+                <div class="board">
+                  <div class="board-info visible">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="board-info">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="name">
+                        محمد أحمد الراجحي
+                      </div>
+                      <div class="age">
+                        6 سنوات
+                      </div>
+
+                      <div class="mosque">
+                        مسجد الرحمن
+                      </div>
+                      <div class="description">
+                        حافظ لكتاب الله
+                      </div>
+
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="board-img d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/pages/Rectangle1.png" alt="student">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="d-flex flex-column ">
+                <div class="board">
+                  <div class="board-info visible">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="board-info">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="name">
+                        محمد أحمد الراجحي
+                      </div>
+                      <div class="age">
+                        6 سنوات
+                      </div>
+
+                      <div class="mosque">
+                        مسجد الرحمن
+                      </div>
+                      <div class="description">
+                        حافظ لكتاب الله
+                      </div>
+
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="board-img d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/pages/Rectangle2.png" alt="student">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="d-flex flex-column ">
+                <div class="board">
+                  <div class="board-info visible">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="board-info">
+                    <div class="content d-flex flex-column gap-1 p-2">
+                      <div class="name">
+                        محمد أحمد الراجحي
+                      </div>
+                      <div class="age">
+                        6 سنوات
+                      </div>
+
+                      <div class="mosque">
+                        مسجد الرحمن
+                      </div>
+                      <div class="description">
+                        حافظ لكتاب الله
+                      </div>
+
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="board-img d-flex justify-content-center align-items-center">
+                    <img src="./assets/img/pages/Rectangle4.png" alt="student">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- الدورات القادمة -->
+    <section>
+      <!-- Modified Section  -->
+      <div class="container">
+
+        <h4 class="text-center mb-4 p-0 primary-color">الدورات القادمة</h4>
+        <!-- cards -->
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <div class="row g-3 gx-lg-3 gy-lg-0 appointments">
+              <div class="col-12 col-lg-4">
+                <div class="pink-cont-bg p-3 h-100 title">
+                  دورة تأسيس القراءة
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="blue-cont-bg p-3 h-100">
+                  <div class="d-flex flex-row gap-2 justify-content-between">
+                    <div class="fw-semibold pb-2">:المواعيد</div>
+                    <span class="year">1446هـ</span>
+                  </div>
+                  <div class="list d-flex flex-column gap-2">
+                    <div class="li d-flex flex-column flex-wrap gap-1">
+                      <div class="d-flex flex-row flex-wrap gap-1 justify-content-start">
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">من:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              السبت 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">إلى:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              الأحد 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-1">
+                        <span class="date">6:00 ص</span>
+                        <span class="date">-</span>
+                        <span class="date">8:00 م</span>
+                      </div>
+                    </div>
+                    <div class="li d-flex flex-column flex-wrap gap-1">
+                      <div class="d-flex flex-row flex-wrap gap-1 justify-content-start">
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">من:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              السبت 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">إلى:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              الأحد 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-1">
+                        <span class="date">6:00 ص</span>
+                        <span class="date">-</span>
+                        <span class="date">8:00 م</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row g-3 gx-lg-3 gy-lg-0 appointments">
+              <div class="col-12 col-lg-4">
+                <div class="pink-cont-bg p-3 h-100 title">
+                  دورة تأسيس القراءة
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="blue-cont-bg p-3 h-100">
+                  <div class="d-flex flex-row gap-2 justify-content-between">
+                    <div class="fw-semibold pb-2">:المواعيد</div>
+                    <span class="year">1446هـ</span>
+                  </div>
+                  <div class="list d-flex flex-column gap-2">
+                    <div class="li d-flex flex-column flex-wrap gap-1">
+                      <div class="d-flex flex-row flex-wrap gap-1 justify-content-start">
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">من:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              السبت 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">إلى:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              الأحد 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-1">
+                        <span class="date">6:00 ص</span>
+                        <span class="date">-</span>
+                        <span class="date">8:00 م</span>
+                      </div>
+                    </div>
+                    <div class="li d-flex flex-column flex-wrap gap-1">
+                      <div class="d-flex flex-row flex-wrap gap-1 justify-content-start">
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">من:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              السبت 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">إلى:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              الأحد 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-1">
+                        <span class="date">6:00 ص</span>
+                        <span class="date">-</span>
+                        <span class="date">8:00 م</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row g-3 gx-lg-3 gy-lg-0 appointments">
+              <div class="col-12 col-lg-4">
+                <div class="pink-cont-bg p-3 h-100 title">
+                  دورة تأسيس القراءة
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="blue-cont-bg p-3 h-100">
+                  <div class="d-flex flex-row gap-2 justify-content-between">
+                    <div class="fw-semibold pb-2">:المواعيد</div>
+                    <span class="year">1446هـ</span>
+                  </div>
+                  <div class="list d-flex flex-column gap-2">
+                    <div class="li d-flex flex-column flex-wrap gap-1">
+                      <div class="d-flex flex-row flex-wrap gap-1 justify-content-start">
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">من:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              السبت 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">إلى:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              الأحد 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-1">
+                        <span class="date">6:00 ص</span>
+                        <span class="date">-</span>
+                        <span class="date">8:00 م</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row g-3 gx-lg-3 gy-lg-0 appointments">
+              <div class="col-12 col-lg-4">
+                <div class="pink-cont-bg p-3 h-100 title">
+                  دورة تأسيس القراءة
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="blue-cont-bg p-3 h-100">
+                  <div class="d-flex flex-row gap-2 justify-content-between">
+                    <div class="fw-semibold pb-2">:المواعيد</div>
+                    <span class="year">1446هـ</span>
+                  </div>
+                  <div class="list d-flex flex-column gap-2">
+                    <div class="li d-flex flex-column flex-wrap gap-1">
+                      <div class="d-flex flex-row flex-wrap gap-1 justify-content-start">
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">من:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              السبت 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-row gap-2 pe-2">
+                          <span class="label">إلى:</span>
+                          <div class="d-flex flex-column">
+                            <span class="date">
+                              الأحد 8
+                              <span class="smaller">شعبان</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-1">
+                        <span class="date">6:00 ص</span>
+                        <span class="date">-</span>
+                        <span class="date">8:00 م</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- الدورات القادمة -->
+    <section>
+      <!-- Modified Section  -->
+      <div class="container">
+
+        <div class="px-3 py-4 blue-bg">
+          <div class="text-center">
+            <h4 class="mb-4 p-0 wh">انضم إلى عائلة الحُــــلة الآن</h4>
+            <button class="btn btn-primary primary-color custom-button">
+              سجل الآن
+            </button>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer-theme">
+    <div class="container">
+      <div class="row justify-content-md-between justify-content-center px-3 py-4 ">
+        <div class="col-auto order-2 order-md-1">
+          <div class="d-flex flex-row gap-2 align-items-center m-0">
+            <span>
+              تم التطوير من قبل 
+            </span>
+            <a target="_blank" href="https://devzonez.com">"Devzonez Solutions"</a>
+          </div>
+        </div>
+        <div class="col-auto order-md-2">
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center">
+            <div class="">
+              حلقات الحلة لتحفيظ القرآن الكريم
+              © <span id="year"></span> 
+            </div>
+            <div class="d-flex flex-row gap-3 justify-content-start">
+              <a class="social" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="social" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="social" href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="assets/vendor/libs/popper/popper.js"></script>
+  <script src="assets/vendor/js/bootstrap.js"></script>
+
+  <!-- OwlCarousel -->
+  <script src="assets/vendor/libs/owlcarousel/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        responsiveClass: true,
+        rtl: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 2,
+            nav: true
+          },
+          576: {
+            items: 2,
+            nav: false
+          },
+          768: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 20
+          },
+          992: {
+            items: 4,
+            nav: true,
+            loop: false,
+            margin: 20
+          },
+          1200: {
+            items: 5,
+            nav: true,
+            loop: false,
+            margin: 20
+          }
+        }
+      })
+    })
+  </script>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.add('active');
+          slide.classList.remove('inactive');
+        } else {
+          slide.classList.remove('active');
+          slide.classList.add('inactive');
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 10000); // تغيير الصورة كل 10 ثوانٍ
+
+  </script>
+  <script>
+    // جافا سكريبت لتحديد السنة الحالية
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html>

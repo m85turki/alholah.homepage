@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- Splide CSS -->
+        <link rel="stylesheet" href="./css/splide.min.css" />
+        <link rel="stylesheet" href="./css/themes/splide-default.min.css" />
+        <link rel="stylesheet" href="./css/splide-core.min.css" />
+    
+    
+</head>
+<body>
+    
+
+    <section class="splide" id="splide-slider" aria-labelledby="carousel-heading">      
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="./img/slider01.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="./img/slider01.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                      <img src="./img/slider01.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </section>
+
+        <!-- Splidejs JS -->
+        
+        <script src="./js/splide.min.js"></script>
+
+          <!-- Splide -->
+  <script>
+    //splide-customers
+    new Splide('#splide-slider', {
+      perPage: 1,
+      type       : 'fade',
+  heightRatio: 0.5,
+  pagination : false,
+  arrows     : false,
+  cover      : true,
+
+  
+      rewind: true,
+      autoplay: true,
+      direction: 'rtl',
+      pagination: false,
+      arrows: true,
+      height: '100vh',
+      cover: true,
+      pauseOnHover:true,
+     
+
+      breakpoints: {
+        1600: {
+          perPage: 1,
+          gap: '.7rem',
+          height: '80px',
+        },
+      },
+    }).mount();
+  </script>
+
+
+
+</body>
+</html>
